@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Navbar Styling */
+
+#navbar {
+    /*
+    - Change background color to #f9a857
+    - Turn the navbar into a flex container w/ space between items
+    - Align the items vertically across the center
+    - Add a bottom margin of 35px
+    - Add a padding of 25px to thicken navbar
+    */
+    background-color: #f9a857;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 35px;
+    padding: 25px;
+}
+
+.title a {
+    /*
+    - Change font color to white
+    - Set font size to 35px
+    - Add a left margin of 25px
+    - Get rid of the link underline with text-decoration
+    - Bold the text
+    */
+    color: white;
+    font-size: 35px;
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-buttons a {
+    /*
+    - Change font color to white
+    - Set font size to 25px
+    - Add a right margin of 16px
+    - Get rid of the link underline with text-decoration
+    */
+    color: white;
+    font-size: 25px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+
+/* Homepage Styling */
+h2 {
+    text-align: center;
+  }
+
+/* Trips Section Styling */
+.trips-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    gap: 20px;
+  }
+  
+  .trip-box {
+    flex: 1;
+    padding: 20px;
+    background-color: #f7cda3;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .trips-container {
+      flex-direction: column;
+      width: 90%;
+    }
+  
+    .trip-box {
+      margin-bottom: 20px;
+      width: 90%;
+    }
+  }
+
+
+/* Upload Page Section */
+#upload-page-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+#add-trip {
+    width: 100%;
+    max-width: 600px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#trip-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#trip-form label {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#trip-form input, #trip-form textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#trip-form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #f9a857;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#trip-form button:hover {
+    background-color: #e08e38;
+}
