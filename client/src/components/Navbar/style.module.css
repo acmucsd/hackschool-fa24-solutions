@@ -1,6 +1,6 @@
 /* Navbar Styling */
 
-#navbar {
+.navbar {
     /*
     - Change background color to #f9a857
     - Turn the navbar into a flex container w/ space between items
@@ -31,7 +31,7 @@
     font-weight: bold;
 }
 
-.nav-buttons a {
+.nav_buttons a {
     /*
     - Change font color to white
     - Set font size to 25px
