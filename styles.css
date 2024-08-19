@@ -91,14 +91,14 @@ h2 {
 
 
 /* Upload Page Section */
-#upload-page-section {
+.upload-page-section {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
 }
 
-#add-trip {
+.add-trip {
     width: 100%;
     max-width: 600px;
     background-color: #f4f4f4;
@@ -107,17 +107,17 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-#trip-form {
+.trip-form {
     display: flex;
     flex-direction: column;
 }
 
-#trip-form label {
+.trip-form label {
     margin-top: 10px;
     margin-bottom: 5px;
 }
 
-#trip-form input, #trip-form textarea {
+.trip-form input, .trip-form textarea {
     padding: 10px;
     font-size: 16px;
     border: 1px solid #ccc;
@@ -125,7 +125,7 @@ h2 {
     margin-bottom: 20px;
 }
 
-#trip-form button {
+.trip-form button {
     padding: 10px;
     font-size: 16px;
     background-color: #f9a857;
@@ -135,6 +135,6 @@ h2 {
     cursor: pointer;
 }
 
-#trip-form button:hover {
+.trip-form button:hover {
     background-color: #e08e38;
 }
