@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
 </head>
 <body>
     
@@ -20,7 +21,7 @@
     <section class="upload-page-section">
         <div class="add-trip">
           <h2>Add a Trip</h2>
-          <form class="trip-form">
+          <form class="trip-form" onsubmit="return handleSubmit(event)">
             <label for="destination">Destination:</label>
             <input type="text" class="destination" name="destination" required>
             
