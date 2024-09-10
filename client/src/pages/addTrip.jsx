@@ -1,5 +1,5 @@
-const UploadTrip = () => {
+const AddTrip = () => {
   return <div>This is a page to upload trips</div>;
 };
 
-export default UploadTrip;
+export default AddTrip;
