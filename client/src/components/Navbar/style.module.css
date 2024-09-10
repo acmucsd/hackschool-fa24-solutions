@@ -16,6 +16,14 @@
     padding: 25px;
 }
 
+.title {
+    /*
+    - Center logo with title
+    */
+    display: flex;
+    align-items: center;
+}
+
 .title a {
     /*
     - Change font color to white
@@ -33,11 +41,17 @@
 
 .nav_buttons a {
     /*
+    - Add padding for spacing
+    - Add solid white border
+    - Add rounded corners for border
     - Change font color to white
     - Set font size to 25px
     - Add a right margin of 16px
     - Get rid of the link underline with text-decoration
     */
+    padding: 0.75rem;
+    border: 1px solid white;
+    border-radius: 10px;
     color: white;
     font-size: 25px;
     margin-right: 16px;
