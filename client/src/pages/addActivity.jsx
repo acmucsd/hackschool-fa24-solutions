@@ -8,8 +8,8 @@ const AddActivity = () => {
         What fun things did you do on your trip? Sky-diving? Hiking? Kayaking?
       </p>
       <form className={styles.tripForm}>
-        <label for="destination">Choose your trip:</label>
-        <select name="destinationPicker" className="destinationPicker">
+        <label for="trip">Choose your trip:</label>
+        <select name="tripPicker" className="tripPicker">
           <option value="Honolulu, Hawaii">Honolulu, Hawaii</option>
           <option value="London, UK">London, UK</option>
         </select>
