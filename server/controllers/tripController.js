@@ -1,13 +1,7 @@
-const getTrip = async (req, res) => {
-    const trip = [
-        {
-            destination: 'Paris',
-            startDate: '2024-08-01',
-            endDate: '',
-            journalEntry: 'Had a wonderful time visiting the Eiffel Tower and the Louvre.'
-        }
-    ];
+const Trips = require('../models/tripModel');
 
+const getTrip = async (req, res) => {
+    const trip = await Trips.find();
     res.status(200).json(trip);
 }
 
@@ -24,8 +18,10 @@ const postTrip = async (req, res) => {
 
     if (end && start > end) {
         return res.status(400).json({ error: 'End date must be after start date' });
-    } else {
-        res.status(200).json({ trip });
+    }
+    else {
+        const newTrip = await Trips.create(req.body);
+        res.status(200).json(newTrip);
     }
 }
 

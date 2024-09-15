@@ -1,3 +1,4 @@
+import TripCard from "@/components/TripCard";
 import styles from "@/styles/Home.module.css";
 
 const Home = () => {
@@ -5,12 +6,7 @@ const Home = () => {
     <div className={styles.main}>
       <h2 className={styles.title}>Your Trips</h2>
       <div className={styles.trip_container}>
-        <div className={styles.trip_box}>
-          <h3>Current Trips</h3>
-        </div>
-        <div className={styles.trip_box}>
-          <h3>Upcoming Trips</h3>
-        </div>
+      <TripCard destination="Hello" startDate={Date('2019-09-10')} endDate={Date('2019-09-14')} journalEntry="Hello"/>
       </div>
     </div>
   );

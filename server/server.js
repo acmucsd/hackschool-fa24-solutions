@@ -1,7 +1,7 @@
 const express = require ('express');
 const cors = require('cors');
 const config = require('./config/server');
-const router = require('./routes/tripRoutes')
+const router = require('./routes/tripRoutes');
 
 
 // Create an Express server
@@ -12,6 +12,13 @@ server.use(express.json());
 
 // Mount /api onto our server
 server.use('/api', router);
+
+// Connect to MongoDB database
+mongoose.connect(config.databaseUrl, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true }).then(() => {
+  console.log('Connected to MongoDB database');
+});
 
 server.listen(config.PORT, () => {
     console.log("Server started on PORT " + config.PORT);
