@@ -1,26 +1,26 @@
-import styles from "@/styles/TripForm.module.css";
+import styles from "../styles/TripForm.module.css";
 
 const AddTrip = () => {
   return (
-    <div class={styles.addTrip}>
+    <div className={styles.container}>
       <h2>Add a Trip</h2>
-      <form class={styles.tripForm}>
+      <form className={styles.tripForm}>
         <label for="destination">Destination:</label>
-        <input type="text" class="destination" name="destination" required />
+        <input type="text" className="destination" name="destination" required />
 
-        <label for="start-date">Start Date:</label>
-        <input type="date" class="start-date" name="start-date" required />
+        <label for="startDate">Start Date:</label>
+        <input type="date" className="startDate" name="startDate" required />
 
-        <label for="end-date">End Date:</label>
-        <input type="date" class="end-date" name="end-date" required />
+        <label for="endDate">End Date:</label>
+        <input type="date" className="endDate" name="endDate" required />
 
         <label for="entry">Journal Entry:</label>
-        <textarea class="entry" name="entry" required></textarea>
+        <textarea className="entry" name="entry" required></textarea>
 
         <button type="submit">Add Trip</button>
       </form>
     </div>
-  );
+  )
 };
 
 export default AddTrip;

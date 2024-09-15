@@ -1,11 +1,11 @@
-.addTrip {
+.container {
     margin: 0 auto;
     width: 100%;
     max-width: 600px;
     background-color: #f4f4f4;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
 }
 
 .tripForm {
