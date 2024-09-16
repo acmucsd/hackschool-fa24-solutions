@@ -1,5 +1,6 @@
 const express = require ('express');
 const cors = require('cors');
+const mongoose = require('mongoose');
 const config = require('./config/server');
 const router = require('./routes/tripRoutes');
 
@@ -14,7 +15,7 @@ server.use(express.json());
 server.use('/api', router);
 
 // Connect to MongoDB database
-mongoose.connect(config.databaseUrl, {
+mongoose.connect(config.DB_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true }).then(() => {
   console.log('Connected to MongoDB database');
