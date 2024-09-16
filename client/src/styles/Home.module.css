@@ -1,5 +1,9 @@
 /* Homepage Styling */
 
+.main {
+  margin-bottom: 20px;
+}
+
 .title {
   text-align: center;
 }
@@ -8,13 +12,16 @@
 .tripContainer {
   display: flex;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   margin: 0 auto;
   width: 80%;
   gap: 20px;
 }
 
 .tripBox {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   flex: 1;
 }
 

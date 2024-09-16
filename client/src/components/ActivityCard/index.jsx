@@ -4,7 +4,7 @@ const ActivityCard = ({ trip, activitySpot, rating, review }) => {
   return (
     <div className={styles.card}>
       <p className={styles.cardContent}>
-        <strong>Trip: </strong> {trip}
+        <strong>Trip: </strong> {trip.destination}
       </p>
       <p className={styles.cardContent}>
         <strong>Activity Spot:</strong> {activitySpot}
