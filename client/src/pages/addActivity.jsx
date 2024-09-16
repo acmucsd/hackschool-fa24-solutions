@@ -49,7 +49,7 @@ const AddActivity = () => {
         What fun things did you do on your trip? Sky-diving? Hiking? Kayaking?
       </p>
       <form className={styles.tripForm} onSubmit={handleSubmit}>
-        <label for="trip">Choose your trip:</label>
+        <label htmlFor="trip">Choose your trip:</label>
         <select name="tripPicker" className="tripPicker" onChange={(e) => setSelectedTrip(e.target.value)}>
             {trips.map((trip) => (
               <option key={trip._id} value={trip._id}>
@@ -57,9 +57,9 @@ const AddActivity = () => {
               </option>
             ))}
         </select>
-        <label for="activity">Activity:</label>
+        <label htmlFor="activity">Activity:</label>
         <input type="text" className="activity" name="activity" onChange={(e) => setActivity(e.target.value)} required />
-        <label for="rating">Rating (1-5):</label>
+        <label htmlFor="rating">Rating (1-5):</label>
         <select name="rating" defaultValue="1" className="rating" onChange={(e) => setRating(e.target.value)}>
           <option value="1">1</option>
           <option value="2">2</option>
@@ -67,7 +67,7 @@ const AddActivity = () => {
           <option value="4">4</option>
           <option value="5">5</option>
         </select>
-        <label for="review">Review:</label>
+        <label htmlFor="review">Review:</label>
         <textarea className="review" name="review" onChange={(e) => setReview(e.target.value)} required></textarea>
 
         <button type="submit">Add Activity</button>
