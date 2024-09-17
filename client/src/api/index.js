@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 // Use the port number that is defined in your .env file
-const serverURL = `http://localhost:4000`;
+const serverURL = `https://hackschool-fa24-solutions.onrender.com`;
 
 const TravelApi = {
     getTrip: () => axios.get(`${serverURL}/api/trip`),
