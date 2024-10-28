@@ -6,16 +6,16 @@ const AddTrip = () => {
       <h2>Add a Trip</h2>
       <form className={styles.tripForm}>
         <label htmlFor="destination">Destination:</label>
-        <input type="text" className="destination" name="destination" required />
+        <input type="text" name="destination" required />
 
         <label htmlFor="startDate">Start Date:</label>
-        <input type="date" className="startDate" name="startDate" required />
+        <input type="date" name="startDate" required />
 
         <label htmlFor="endDate">End Date:</label>
-        <input type="date" className="endDate" name="endDate" required />
+        <input type="date" name="endDate" required />
 
         <label htmlFor="entry">Journal Entry:</label>
-        <textarea className="entry" name="entry" required></textarea>
+        <textarea name="entry" required></textarea>
 
         <button type="submit">Add Trip</button>
       </form>
