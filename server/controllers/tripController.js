@@ -1,4 +1,5 @@
 const getTrip = async (req, res) => {
+    // We don't have a database yet, so we'll hard-code a trip to return.
     const trip = [
         {
             destination: 'Paris',
@@ -11,22 +12,16 @@ const getTrip = async (req, res) => {
     res.status(200).json(trip);
 }
 
-const postTrip = async (req, res) => {
-    const { trip } = req.body;
-    const { destination, startDate, endDate, journalEntry } = trip;
-
-    if (!destination || !startDate || !journalEntry) {
-        return res.status(400).json({ error: 'Invalid request' });
+const getTripName = async (req, res) => {
+    const name = req.query.name;
+    
+    // check if the name exists
+    if (!name) {
+        return res.status(400).json({ message: 'Name query parameter is required.' });
     }
 
-    const start = new Date(startDate);
-    const end = endDate ? new Date(endDate) : null;
-
-    if (end && start > end) {
-        return res.status(400).json({ error: 'End date must be after start date' });
-    } else {
-        res.status(200).json({ trip });
-    }
+    res.status(200).json({ message: `We are going to ${name}.` });
 }
 
-module.exports = { getTrip, postTrip };
+
+module.exports = { getTrip, getTripName };
